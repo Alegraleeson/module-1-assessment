@@ -3,7 +3,7 @@
 
 // Create a variable called password and set it’s value to a string of your choice.
 
-let password = "ihatepasswords"
+
 
 // Write a conditional statement that checks if the password meets the following constraints:
 
@@ -14,28 +14,46 @@ let password = "ihatepasswords"
 // If the password meets the constraint, console log a success message.
 
 // If the password fails the constraint, console log a failure message.
+let password = "ihatepasswords1"
 let passCheck = password.split('')
+let hasLetter = false
+let hasNumber = false
 
-console.log(passCheck)
-
-let hasLetter = true
-let hasNumber = true
-
-for(let i=0; i<password.length; i++){
-   if (isNaN(passCheck[i]) === true) {
-    hasLetter = true
-   } else if (isNaN(passCheck[i]) === false) {
-    hasLetter = false
-   }
-} 
+// console.log(passCheck)
 
 for(let i=0; i<password.length; i++){
-    if (isNaN(passCheck[i]) === false) {
-     hasNumber = true
-    } else if (isNaN(passCheck[i]) === true) {
-     hasNumber = false
-    }
+    if (isNaN(password.charAt(i)) === true) {
+     hasLetter = true
+    } 
  } 
+
+ for(let i=0; i<password.length; i++){
+    if (isNaN(password.charAt(i)) === false) {
+     hasNumber = true
+ } 
+}
+
+ console.log(hasLetter)
+ console.log(hasNumber)
+
+
+// for(let i=0; i<password.length; i++){
+//    if (isNaN(passCheck[i]) === true) {
+//     hasLetter = true
+//    } else if (isNaN(passCheck[i]) === false) {
+//     hasLetter = false
+//    }
+// } 
+
+
+
+// for(let i=0; i<password.length; i++){
+//     if (isNaN(passCheck[i]) === false) {
+//      hasNumber = true
+//     } else if (isNaN(passCheck[i]) === true) {
+//      hasNumber = false
+//     }
+//  } 
 
 if (password.length >= 10 && password.length <= 20 && hasLetter === true && hasNumber === true) {
     console.log('Success')
