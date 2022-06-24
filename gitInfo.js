@@ -11,6 +11,8 @@
 
 //CODE HERE
 
+let gitDefinition = 'Git is a free and open source distributed version control system.'
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -19,6 +21,8 @@
 
 //CODE HERE
 
+let gitHubDefinition = 'GitHub is a code hosting platform for version control and collaboration.'
+
 //////////////////PROBLEM 3////////////////////
 /*
     Create a variable called 'gitInitDefinition'.  
@@ -26,6 +30,8 @@
 */
 
 //CODE HERE
+
+let gitInitDefinition = 'The git init command creates a new Git repository. It can also be used to convert an existing, unversioned project to a git repository.'
 
 //////////////////PROBLEM 4////////////////////
 /*
