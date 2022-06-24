@@ -78,6 +78,8 @@ let gitAddCode = 'git add .'
 
 //CODE HERE
 
+let gitCommitDefinition = 'The git commit command captures a snapshot of the currently staged changes of the project.'
+let gitCommitCode = 'git commit -m "initial commit"'
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -86,3 +88,6 @@ let gitAddCode = 'git add .'
 */
 
 //CODE HERE
+
+let gitPushDefinition = 'The git push command is used to upload local repository content --the things you committed-- to a remote repository.'
+
