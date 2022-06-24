@@ -41,6 +41,8 @@ let gitInitDefinition = 'The git init command creates a new Git repository. It c
 
 //CODE HERE
 
+let gitCloneDefinition = 'The git clone command creates a copy of a repository.'
+
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -48,6 +50,8 @@ let gitInitDefinition = 'The git init command creates a new Git repository. It c
 */
 
 //CODE HERE
+
+let gitStatusDefinition = 'The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven not, and which files aren not being tracked by Git.'
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -59,6 +63,9 @@ let gitInitDefinition = 'The git init command creates a new Git repository. It c
 */
 
 //CODE HERE
+
+let gitAddDefinition = 'The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit.'
+let gitAddCode = 'git add .'
 
 //////////////////PROBLEM 7////////////////////
 /*
