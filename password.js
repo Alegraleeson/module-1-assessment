@@ -1,7 +1,8 @@
-let password = "ihatepasswords"
+let password = "ihatepasswords1"
 let passCheck = password.split('')
 let hasLetter = false
 let hasNumber = false
+let hasSpace = false
 
 for(let i=0; i<password.length; i++){
     if (isNaN(password.charAt(i)) === true) {
@@ -15,13 +16,26 @@ for(let i=0; i<password.length; i++){
  } 
 }
 
-if (password.length >= 10 && password.length <= 20 && hasLetter === true && hasNumber === true) {
+// checks if password has a space and changes variable hasSpace to true if it does"
+
+for(let i=0; i<password.length; i++){
+    if (password.charAt(i) === " ") {
+     hasSpace = true
+    } 
+ } 
+
+
+//checks if variable password has at least 10 characters but not more than 20, and if hasLetter, hasNumber, & hasSpace are true or false.   I checked whether to switch them to true earlier.
+
+if (password.length >= 10 && password.length <= 20 && hasLetter === true && hasNumber === true && hasSpace === false) {
     console.log('Success')
 } else {
     console.log('Failure!')
 }
 
-// Test out your conditional by changing the value of your password variable and running your file!
+//extras
+//checked if password has space and is less than 20 characters
+
 
 // String Length
 
